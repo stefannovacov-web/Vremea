@@ -12,7 +12,7 @@ export async function GET(request: Request) {
     );
   }
 
-  const apiKey = process.env.WEATHERAPI_KEY;
+  const apiKey = process.env.WEATHER_API_KEY;
 
   if (!apiKey) {
     return NextResponse.json(
